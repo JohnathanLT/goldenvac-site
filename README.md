@@ -31,7 +31,7 @@ O workflow instala a versão travada pelo `pnpm-lock.yaml`, configura o caminho 
 
 ## Atualizar os dados
 
-- **Logo:** substitua o monograma e o texto em `src/components/sections.tsx` (`SiteHeader` e `SiteFooter`) ou use o arquivo `public/logo-golden-vac.svg` como referência. Atualize também o texto alternativo.
+- **Logo:** o arquivo de marca transparente `public/logo-golden-vac.png` é usado no cabeçalho e no rodapé. Atualize também o texto alternativo se a marca ou o nome mudar.
 - **Telefones, e-mail, endereço, redes, cobertura e FINAME:** edite `src/config/site.ts`. Confirme os comentários `TODO` antes de publicar. A seção FINAME aparece apenas quando `finame` é `true`.
 - **Equipamento:** inclua um item em `src/data/equipamentos.ts`, com slug, resumo, specs, fotos e aplicações. Use “Consulte” em qualquer especificação ainda não confirmada. A página individual e sua rota estática são geradas a partir da lista.
 - **Fotos da galeria:** os 16 arquivos recebidos estão em `public/galeria/`; os originais também permanecem na pasta `FOTOSEVIDEOS/`. Para novas fotos, coloque os arquivos em `public/galeria/` e adicione um item em `src/data/galeria.ts`, com texto alternativo descritivo, categoria e equipamento. Use caminhos como `/galeria/foto-entrega.jpg`. No build, são geradas versões WebP em 640, 1280 e 1920 px e servidas por `srcset`; SVGs e vídeos locais podem ser cadastrados diretamente. Fotos de equipamentos podem ficar em `public/equipamentos/`.
