@@ -1,0 +1,10 @@
+node_modules/
+.pnpm-store/
+.next/
+out/
+public/galeria/optimized/
+FOTOSEVIDEOS/
+.env
+.env.*
+!.env.example
+*.log
